@@ -5,7 +5,7 @@ public class Main {
        book.date = date;
        return book;
     }
-    public static Author createBook(String nameAuthor, String surname){
+    public static Author createAuthor(String nameAuthor, String surname){
         Author author = new Author();
         author.nameAuthor = nameAuthor;
         author.surname = surname;
@@ -19,6 +19,7 @@ public class Main {
         String nameBook;
         Author author;
         int date;
+
 
     }
 
