@@ -26,8 +26,9 @@ public class Main {
             public int getDate() {
                 return this.date;
             }
-
-
+            public void setDate(int date) {
+                this.date = date;
+            }
         }
 
         public class Author {
