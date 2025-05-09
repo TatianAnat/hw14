@@ -12,23 +12,36 @@ public class Main {
 
         }
         public class Book {
-            String nameBook;
-            Author author;
+            private String nameBook;
+            private Author author;
             int date;
             public Book(String nameBook, Author author, int date) {
                 this.nameBook = nameBook;
                 this.author = author;
                 this.date = date;
             }
+            public String  getNameBook() {
+                return this.nameBook;
+            }
+            public int getDate() {
+                return this.date;
+            }
+
 
         }
 
         public class Author {
-            String nameAuthor;
-            String surname;
+            private String nameAuthor;
+            private String surname;
             public Author(String nameAuthor, String surname) {
                 this.nameAuthor = nameAuthor;
                 this.surname = surname;
+            }
+            public String getNameAuthor() {
+                return this.nameAuthor;
+            }
+            public String getSurname() {
+                return this.surname;
             }
         }
 
