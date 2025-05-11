@@ -33,11 +33,11 @@ public class Book {
 
     @Override
     public int hashCode() {
-        return Objects.hash(nameBook,author,publicationYear);
+        return Objects.hash(nameBook, author, publicationYear);
     }
 
     @Override
     public String toString() {
-        return "Книга { " + "название = " + nameBook + " } " + author + " Год публикации= " + " { " + publicationYear +" }";
+        return "Книга { " + "название = " + nameBook + " } " + author + " Год публикации= " + " { " + publicationYear + " }";
     }
 }
