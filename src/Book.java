@@ -3,12 +3,12 @@ import java.util.Objects;
 public class Book {
     private String nameBook;
     private Author author;
-    int date;
+    int publicationYear;
 
     public Book(String nameBook, Author author, int date) {
         this.nameBook = nameBook;
         this.author = author;
-        this.date = date;
+        this.publicationYear = date;
     }
 
     public String getNameBook() {
@@ -16,11 +16,11 @@ public class Book {
     }
 
     public int getDate() {
-        return this.date;
+        return this.publicationYear;
     }
 
     public void setDate(int date) {
-        this.date = date;
+        this.publicationYear = date;
     }
 
     @Override
@@ -28,16 +28,16 @@ public class Book {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Book book = (Book) o;
-        return date == book.date && Objects.equals(nameBook, book.nameBook) && Objects.equals(author, book.author);
+        return publicationYear == book.publicationYear && Objects.equals(nameBook, book.nameBook) && Objects.equals(author, book.author);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(nameBook,author,date);
+        return Objects.hash(nameBook,author,publicationYear);
     }
 
     @Override
     public String toString() {
-        return "Книга { " + "название = " + nameBook + " } " + author + " Год публикации= " + " { " + date +" }";
+        return "Книга { " + "название = " + nameBook + " } " + author + " Год публикации= " + " { " + publicationYear +" }";
     }
 }
