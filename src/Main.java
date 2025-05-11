@@ -10,6 +10,9 @@ public class Main {
         System.out.println("Книга " + book2.getNameBook() + "Автор " + author2.getNameAuthor() + author2.getSurname() + " Год публикации " + book2.getDate());
         book1.setDate(2024);
         System.out.println("Книга " + book1.getNameBook() + "Автор " + author1.getNameAuthor() + author1.getSurname() + " Год публикации " + book1.getDate());
+
+        System.out.println(book1);
+        System.out.println(book2);
     }
 }
 
